@@ -15,22 +15,22 @@ SRCEXT = c
 CC = gcc
 
 # Dependency libraries
-LIBS = -lm -lncurses 
+LIBS = 
 
 # Defines the language standards for GCC
-STD = -std=c11 # See man gcc for more options
+# STD = -std=c11 
 
 # Protection for stack-smashing attack
-STACK = -fstack-protector-all -Wstack-protector
+# STACK = -fstack-protector-all -Wstack-protector
 
 # Specifies to GCC the required warnings
-WARNS = -Wall -Wextra -pedantic 
+# WARNS = -Wall -Wextra -pedantic 
 
 # Flags for compiling 
 CFLAGS = -O3 $(STD) $(STACK) $(WARNS)
 
 # Debug options
-DEBUG = -g3 -DDEBUG=1
+# DEBUG = -g3 -DDEBUG=1
 
 # paths
 PROJECT_PATH = $(PWD)
