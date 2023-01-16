@@ -51,6 +51,10 @@ FILES = $(filter-out $@,$(MAKECMDGOALS))
 run:
 	$(BINDIR)/$(BINARY) $(FILES)
 
+# debug
+debug:
+	gdb $(BINDIR)/$(BINARY) $(FILES)
+
 # Clean
 clean:
 	@rm -rvf $(BINDIR)/* $(LIBDIR)/* $(LOGDIR)/*;
